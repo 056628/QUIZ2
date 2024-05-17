@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih iPhone:"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_phones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_iphone15ProMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 15 Pro Max (300000)"/>
+        <RadioButton
+            android:id="@+id/rb_iphone15Pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 15 Pro (280000)"/>
+        <RadioButton
+            android:id="@+id/rb_iphone14ProMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 14 Pro Max (250000)"/>
+        <RadioButton
+            android:id="@+id/rb_iphone14Pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 14 Pro (200000)"/>
+        <RadioButton
+            android:id="@+id/rb_iphone13ProMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 13 Pro Max (100000)"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan Barang:"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_airPods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Pods (20000)"/>
+        <RadioButton
+            android:id="@+id/rb_casing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cassing (10000)"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berapa Hari Rental"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan jumlah hari"/>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
